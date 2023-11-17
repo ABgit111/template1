@@ -2,8 +2,29 @@
 import Container from "./Container.astro";
 
 ---
-
-<footer class="py-20 md:py-40">
+<footer class="">
+  <Container>
+    <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3">
+      <div class="p-4 transition duration-200 hover:grayscale-0">
+        <a href="https://www.cuhk.edu.cn/zh-hans">
+          <img src="./CUHKSZ.png" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+        </a>
+      </div>
+    <div class="p-4 transition duration-200 hover:grayscale-0">
+      <a href="https://www.sribd.cn/">
+        <img src="./SRIBD.png" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+      </a>
+    </div>
+    <div class="p-4 flex transition duration-200 hover:grayscale-0">
+      <a href="https://www.kaust.edu.sa/en/">
+        <img src="./kaust.png" class="h-12 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
+      </a>
+    </div>
+    </div>
+  </Container>
+</footer>
+  
+<!-- <footer class="py-20 md:py-40">
     <Container>
       <div class="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
         <div class="flex flex-wrap items-center justify-between md:flex-nowrap">

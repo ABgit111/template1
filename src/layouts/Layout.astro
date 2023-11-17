@@ -8,10 +8,10 @@ import AppHeader from "../components/AppHeader.astro";
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href="/acegpt.jpg" />
         <meta name="generator" content={Astro.generator} />
         <meta name="description" content="Template built with tailwindcss using Tailus blocks v2" />
-        <title>Tailus astro theme</title>
+        <title>ACEGPT</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
     </head>
@@ -19,7 +19,7 @@ import AppHeader from "../components/AppHeader.astro";
         <AppHeader />
         <slot />
         <AppFooter />
-        <div class="fixed inset-x-6 bottom-6 z-40 mx-auto w-max">
+        <div class="fixed inset-x-6 bottom-2 z-40 mx-auto w-max">
         </div>
     </body>
 </html>
@@ -31,5 +31,19 @@ import AppHeader from "../components/AppHeader.astro";
 
     body {
         margin: 0;
+
+      display: grid;
+      grid-template-rows: auto 1fr auto 40px; /* 第一行自动高度，最后一行自动高度 */
+      min-height: 100vh;
+      margin: 0;
     }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+    
+
 </style>
