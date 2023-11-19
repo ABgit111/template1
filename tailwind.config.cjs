@@ -964,5 +964,7 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  plugins: [require("tailwindcss-fluid-type"),
+  require('@tailwindcss/typography'),
+],
 }
